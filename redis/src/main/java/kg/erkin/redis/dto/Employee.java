@@ -3,18 +3,21 @@ package kg.erkin.redis.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.redis.core.RedisHash;
 
-import java.io.Serializable;
+import javax.persistence.*;
 
-@RedisHash("Employee")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee implements Serializable {
+@Entity
+@Table(name = "employees")
+public class Employee {
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "name")
     private String name;
+    @Column(name = "age")
     private Integer age;
 }
