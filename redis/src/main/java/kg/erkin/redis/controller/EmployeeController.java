@@ -1,6 +1,6 @@
 package kg.erkin.redis.controller;
 
-import kg.erkin.redis.dto.Employee;
+import kg.erkin.redis.entity.Employee;
 import kg.erkin.redis.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
 package kg.erkin.redis.repository;
 
-import kg.erkin.redis.dto.Employee;
+import kg.erkin.redis.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
