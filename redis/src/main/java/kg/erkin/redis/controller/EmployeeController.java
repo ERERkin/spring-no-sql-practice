@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/employees")
 public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
@@ -17,7 +18,7 @@ public class EmployeeController {
     }
 
     @PostMapping
-    ResponseEntity<?> update(@RequestBody Employee employee){
+    ResponseEntity<?> save(@RequestBody Employee employee){
         return ResponseEntity.ok(employeeService.save(employee));
     }
 
