@@ -1,0 +1,16 @@
+2022-06-30 15:11:14.601  INFO 15876 --- [main] k.e.e.ElasticsearchSecondApplication     : Starting ElasticsearchSecondApplication using Java 18 on DESKTOP-3PK294C with PID 15876 (D:\JavaProjects\spring-no-sql-practice\elasticsearch\elasticsearch-second\target\classes started by Erkin in D:\JavaProjects\spring-no-sql-practice\elasticsearch\elasticsearch-second)
+2022-06-30 15:11:14.603  INFO 15876 --- [main] k.e.e.ElasticsearchSecondApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-06-30 15:11:15.193  INFO 15876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8071 (http)
+2022-06-30 15:11:15.200  INFO 15876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-30 15:11:15.200  INFO 15876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-06-30 15:11:15.261  INFO 15876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-30 15:11:15.261  INFO 15876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2022-06-30 15:11:15.504  INFO 15876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8071 (http) with context path ''
+2022-06-30 15:11:15.514  INFO 15876 --- [main] k.e.e.ElasticsearchSecondApplication     : Started ElasticsearchSecondApplication in 1.224 seconds (JVM running for 2.349)
+2022-06-30 15:13:18.731  INFO 15876 --- [http-nio-8071-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-30 15:13:18.733  INFO 15876 --- [http-nio-8071-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-30 15:13:18.735  INFO 15876 --- [http-nio-8071-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-30 15:13:18.787  INFO 15876 --- [http-nio-8071-exec-2] k.e.e.service.CarService                 : Try to found car with id 3
+2022-06-30 15:13:18.790  INFO 15876 --- [http-nio-8071-exec-2] k.e.e.service.CarService                 : Found car Car(id=3, model=Test3, year=2010)
+2022-06-30 15:14:14.422  INFO 15876 --- [http-nio-8071-exec-3] k.e.e.service.CarService                 : Try to found car with id 10
+2022-06-30 15:14:14.427 ERROR 15876 --- [http-nio-8071-exec-3] k.e.e.e.GlobalControllerExceptionHandler : No found car with id 10

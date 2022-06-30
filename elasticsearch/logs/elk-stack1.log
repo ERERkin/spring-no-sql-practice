@@ -1,0 +1,16 @@
+2022-06-30 15:11:05.683  INFO 13764 --- [main] k.e.e.ElasticsearchFirstApplication      : Starting ElasticsearchFirstApplication using Java 18 on DESKTOP-3PK294C with PID 13764 (D:\JavaProjects\spring-no-sql-practice\elasticsearch\elasticsearch-first\target\classes started by Erkin in D:\JavaProjects\spring-no-sql-practice\elasticsearch\elasticsearch-first)
+2022-06-30 15:11:05.686  INFO 13764 --- [main] k.e.e.ElasticsearchFirstApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-06-30 15:11:06.414  INFO 13764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8070 (http)
+2022-06-30 15:11:06.421  INFO 13764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-30 15:11:06.421  INFO 13764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-06-30 15:11:06.497  INFO 13764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-30 15:11:06.497  INFO 13764 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2022-06-30 15:11:06.801  INFO 13764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8070 (http) with context path ''
+2022-06-30 15:11:06.811  INFO 13764 --- [main] k.e.e.ElasticsearchFirstApplication      : Started ElasticsearchFirstApplication in 1.662 seconds (JVM running for 2.331)
+2022-06-30 15:13:10.614  INFO 13764 --- [http-nio-8070-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-30 15:13:10.616  INFO 13764 --- [http-nio-8070-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-30 15:13:10.619  INFO 13764 --- [http-nio-8070-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-30 15:13:10.677  INFO 13764 --- [http-nio-8070-exec-2] k.e.e.service.EmployeeService            : Try to found employee with id 1
+2022-06-30 15:13:10.681  INFO 13764 --- [http-nio-8070-exec-2] k.e.e.service.EmployeeService            : Found employee Employee(id=1, name=Test1, age=20)
+2022-06-30 15:14:36.225  INFO 13764 --- [http-nio-8070-exec-5] k.e.e.service.EmployeeService            : Try to found employee with id 50
+2022-06-30 15:14:36.228 ERROR 13764 --- [http-nio-8070-exec-5] k.e.e.e.GlobalControllerExceptionHandler : No found employee with id 50
