@@ -12,7 +12,7 @@ import java.util.Objects;
 @Service
 @Slf4j
 public class EmployeeService {
-    List<Employee> employees = new ArrayList<>();
+    private List<Employee> employees = new ArrayList<>();
 
     public EmployeeService() {
         employees.add(new Employee(1L, "Test1", 20));
